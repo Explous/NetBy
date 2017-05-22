@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_padding"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.byteli.netby.Widgets.RoundImageView
+        android:layout_width="@dimen/icon_logo"
+        android:layout_height="@dimen/icon_logo"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_guy"/>
+
+    <EditText
+        android:id="@+id/edit_id"
+        android:gravity="center"
+        android:layout_width="@dimen/edit_length"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLength="8"/>
+</LinearLayout>

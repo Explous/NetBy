@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/app_all"
+            style="?android:actionButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_all"
+                android:layout_width="@dimen/icon_global"
+                android:layout_height="@dimen/icon_global"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_all_down"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_game"
+            style="?android:actionButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_game"
+                android:layout_width="@dimen/icon_global"
+                android:layout_height="@dimen/icon_global"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_game"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_tool"
+            style="?android:actionButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_tool"
+                android:layout_width="@dimen/icon_global"
+                android:layout_height="@dimen/icon_global"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_tool"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tool"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/app_shop"
+            style="?android:actionButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_shop"
+                android:layout_width="@dimen/icon_global"
+                android:layout_height="@dimen/icon_global"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_shop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/store"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <GridView
+            android:id="@+id/app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3" />
+    </FrameLayout>
+</LinearLayout>

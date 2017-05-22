@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/guy_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.byteli.netby.Widgets.RoundImageView
+                android:id="@+id/guy_icon"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_guy" />
+
+            <TextView
+                android:id="@+id/guy_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_weight="9"
+        android:id="@+id/list_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+</LinearLayout>
